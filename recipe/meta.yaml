@@ -19,9 +19,8 @@ requirements:
   host:
     # This breals a dependency cycle:
     # curl->libssh2->cmake->curl
+    # add this to ubuntu
     # - cmake-binary
-    # jjhelmus bootstrapped things for us with some cross compilation
-    - cmake
     - openssl
     - zlib
   run:
